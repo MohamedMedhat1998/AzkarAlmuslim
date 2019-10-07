@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+	android:paddingBottom="25dp"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="horizontal"
+    tools:context="com.g_developer.abo_med7at.azkar.MainActivity"
+    android:weightSum="3">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/btn_sab"
+            android:text="أذكار الصباح"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:id="@+id/saba7" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:background="@drawable/btn_mas"
+            android:text="أذكار المساء"
+            android:id="@+id/Button01" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:weightSum="2">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom|center"
+            android:background="@drawable/btn_sala"
+            android:text="أذكار بعد الصلاة"
+            android:id="@+id/btn_azkar_salah" />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="أدعية"
+            android:background="@drawable/btn_ad3ya"
+            android:gravity="bottom|center"
+            android:id="@+id/btn_ad3ya" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="الاعدادات"
+            android:background="@drawable/btn_settings"
+            android:gravity="bottom|center"
+            android:id="@+id/btn_settings" />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="خروج"
+            android:background="@drawable/btn_exit"
+            android:gravity="bottom|center"
+            android:id="@+id/btn_exit" />
+    </TableRow>
+
+</TableLayout>
