@@ -1,4 +1,4 @@
-package com.g_developer.azkar_almuslim.ui.splash_activity
+package com.g_developer.azkar_almuslim.ui.activities.splash_activity
 
 import com.g_developer.azkar_almuslim.behaviors.CanOpenActivity
 

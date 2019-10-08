@@ -1,11 +1,11 @@
-package com.g_developer.azkar_almuslim.ui.splash_activity
+package com.g_developer.azkar_almuslim.ui.activities.splash_activity
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.view.Window
 import android.view.animation.AlphaAnimation
 import android.view.animation.Animation
+import androidx.appcompat.app.AppCompatActivity
 import com.g_developer.azkar_almuslim.R
 import com.g_developer.azkar_almuslim.utils.DatabaseLoader
 import kotlinx.android.synthetic.main.activity_splash_screen.*
@@ -43,7 +43,7 @@ class SplashActivity : AppCompatActivity(), SplashActivityContract.View {
         })
     }
 
-    override fun openActivity(target: Class<*>) {
+    override fun openActivity(target: Class<*>, data: Any) {
         startActivity(Intent(this, target))
         finish()
     }

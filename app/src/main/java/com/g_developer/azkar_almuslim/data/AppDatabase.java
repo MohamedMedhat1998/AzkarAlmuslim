@@ -6,12 +6,14 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
+import com.g_developer.azkar_almuslim.data.dao.AzkarDao;
 import com.g_developer.azkar_almuslim.data.dao.ZekrDao;
+import com.g_developer.azkar_almuslim.data.data_models.Azkar;
 import com.g_developer.azkar_almuslim.data.data_models.Zekr;
 
 import static com.g_developer.azkar_almuslim.utils.Constants.APP_DATABASE_NAME;
 
-@Database(entities = {Zekr.class}, version = 1,exportSchema = false)
+@Database(entities = {Zekr.class, Azkar.class}, version = 1,exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
     private static AppDatabase instance = null;
 
@@ -21,4 +23,6 @@ public abstract class AppDatabase extends RoomDatabase {
         return instance;
     }
     public abstract ZekrDao getZekrDao();
+
+    public abstract AzkarDao getAzkarDao();
 }

@@ -1,17 +1,17 @@
-package com.g_developer.azkar_almuslim.ui.home_activity
+package com.g_developer.azkar_almuslim.ui.activities.home_activity
 
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.g_developer.azkar_almuslim.R
 import kotlinx.android.synthetic.main.activity_home.*
 
-class HomeActivity : AppCompatActivity() , HomeActivityContract.View{
+class HomeActivity : AppCompatActivity(), HomeActivityContract.View {
     private lateinit var presenter: HomeActivityPresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,7 +47,7 @@ class HomeActivity : AppCompatActivity() , HomeActivityContract.View{
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
+        when (item.itemId) {
             R.id.item_settings -> presenter.onSettingsClicked()
             R.id.item_privacy_policy -> presenter.onPrivacyPolicyClicked()
         }
@@ -60,7 +60,7 @@ class HomeActivity : AppCompatActivity() , HomeActivityContract.View{
         startActivity(intent)
     }
 
-    override fun openActivity(target: Class<*>) {
-        startActivity(Intent(this,target))
+    override fun openActivity(target: Class<*>, data: Any) {
+        startActivity(Intent(this, target))
     }
 }

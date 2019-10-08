@@ -4,19 +4,19 @@
     android:versionCode="4"
     android:versionName="1.0.3">
 
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Ad3yaActivity"/>
+        <activity android:name="com.g_developer.azkar_almuslim.ui.activities.azkar_details_activity.AzkarDetailsActivity"></activity>
+        <activity android:name=".Ad3yaActivity" />
         <activity android:name=".SavedItemsActivity" />
         <activity android:name=".CounterActivity" />
-        <activity android:name=".ui.azkar_activity.AzkarActivity" />
-        <activity android:name=".ui.home_activity.HomeActivity" />
-        <activity android:name="com.g_developer.azkar_almuslim.ui.splash_activity.SplashActivity">
+        <activity android:name="com.g_developer.azkar_almuslim.ui.activities.azkar_activity.AzkarActivity" />
+        <activity android:name="com.g_developer.azkar_almuslim.ui.activities.home_activity.HomeActivity" />
+        <activity android:name="com.g_developer.azkar_almuslim.ui.activities.splash_activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

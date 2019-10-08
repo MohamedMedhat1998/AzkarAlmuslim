@@ -1,4 +1,4 @@
-package com.g_developer.azkar_almuslim.ui.home_activity
+package com.g_developer.azkar_almuslim.ui.activities.home_activity
 
 import com.g_developer.azkar_almuslim.behaviors.CanOpenActivity
 import com.g_developer.azkar_almuslim.behaviors.CanOpenBrowser

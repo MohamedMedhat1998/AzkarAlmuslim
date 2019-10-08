@@ -363,5 +363,10 @@
     <string name="tasbee7_counter">عداد التسبيح</string>
     <string name="saved_items">العناصر المحفوظة</string>
     <string name="privacy_policy">سياسة الخصوصية</string>
-	<string name="settings">الاعدادات</string>
+    <string name="settings">الاعدادات</string>
+    <string name="auto_play">تشغيل تلقائي</string>
+    <string name="add_to_saved_items">الاضافة الى العناصر المحفوظة</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,7 +1,7 @@
-package com.g_developer.azkar_almuslim.ui.home_activity
+package com.g_developer.azkar_almuslim.ui.activities.home_activity
 
 import com.g_developer.azkar_almuslim.Ad3yaActivity
-import com.g_developer.azkar_almuslim.ui.azkar_activity.AzkarActivity
+import com.g_developer.azkar_almuslim.ui.activities.azkar_activity.AzkarActivity
 import com.g_developer.azkar_almuslim.CounterActivity
 import com.g_developer.azkar_almuslim.SavedItemsActivity
 
