@@ -14,7 +14,9 @@ class AzkarActivityModel(val context: Context) {
         AzkarTask({
             AppDatabase.getInstance(context).azkarDao.getAll()
         }) {
-            presenter.onDataLoaded(it)
+            if (::presenter.isInitialized) {
+                presenter.onDataLoaded(it)
+            }
         }.execute()
     }
 

@@ -9,18 +9,13 @@ import android.view.ViewGroup
 
 import com.g_developer.azkar_almuslim.R
 import com.g_developer.azkar_almuslim.data.data_models.Zekr
+import kotlinx.android.synthetic.main.fragment_azkar_view.view.*
+import kotlinx.android.synthetic.main.item_zekr.view.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ZEKR_PARAM = "zekr"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [AzkarViewFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class AzkarViewFragment : Fragment() {
-    // TODO: Rename and change types of parameters
+
     private var zekr: Zekr? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,21 +27,14 @@ class AzkarViewFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_azkar_view, container, false)
+        val view = inflater.inflate(R.layout.fragment_azkar_view, container, false)
+        view.tvAzkarText.text = zekr?.text
+        view.tvAzkarCount.text = "${zekr?.count}"
+        return view
     }
 
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment AzkarViewFragment.
-         */
-        // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(zekr: Zekr) =
                 AzkarViewFragment().apply {
